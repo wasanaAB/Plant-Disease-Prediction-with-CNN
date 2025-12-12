@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0ebf0;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+    transition: background-color 0.3s ease;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #4caf50;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background: linear-gradient(to right, #81c7a1, #d0ebf0);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #4caf50;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus {
+    border-color: #45a049;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#progressContainer {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    height: 20px;
+    display: none;
+    overflow: hidden;
+    box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#progressBar {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Water-like animated background */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(to right, #81c7a1, #d0ebf0);
+    }
+    50% {
+        background: linear-gradient(to right, #d0ebf0, #81c7a1);
+    }
+    100% {
+        background: linear-gradient(to right, #81c7a1, #d0ebf0);
+    }
+}
+
+body {
+    background-color: #d0ebf0; /* Light green background outside the card */
+}
